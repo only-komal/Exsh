@@ -22,6 +22,16 @@ Welcome to **Exsh**, A Unix like shell written in pure C. This project mimics th
 | Process Management            | `fork()`, `execvp()`, `wait()` for process control |
 
 ## 🚀 Getting Started
+### Running on Windows (WSL)
+
+This project requires a Unix-like environment due to the use of `fork()`, `execvp()`, and pipes.
+
+Windows users should use WSL (Ubuntu recommended):
+```md
+```bash
+sudo apt update
+sudo apt install build-essential make gcc libreadline-dev
+
 
 ## Requirements
    * libc
@@ -33,9 +43,10 @@ Welcome to **Exsh**, A Unix like shell written in pure C. This project mimics th
 ## 🔧 Build
 
 ```bash
-cd exsh/src
+cd src
 make
-./exsh
+./build/exsh
+
 ```
 ## 📚 Usage Examples
 ```
